@@ -1,30 +1,58 @@
-# React + TypeScript + Vite
+# Portafolio Personal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto de práctica para construir un portafolio profesional minimalista y escalable.
 
-Currently, two official plugins are available:
+## Objetivo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Aprender y practicar el desarrollo de una landing page SPA (Single Page Application) con React, TypeScript y Tailwind CSS, implementando conceptos de:
 
-## Expanding the ESLint configuration
+- Componentización y arquitectura de proyectos
+- Tipado estricto con TypeScript
+- Diseño responsive (Mobile First)
+- Dark/Light mode
+- Routing con React Router
+- Buenas prácticas de desarrollo
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologías
 
-- Configure the top-level `parserOptions` property like this:
+- **React 18** - Librería para construir interfaces de usuario
+- **TypeScript** - Tipado estático
+- **Vite** - Build tool rápido y moderno
+- **Tailwind CSS v4** - Framework de estilos
+- **React Router** - Navegación entre páginas
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Estructura
+
+```
+src/
+├── components/     # Componentes reutilizables
+├── pages/         # Páginas de la aplicación
+├── App.tsx        # Componente principal
+└── main.tsx       # Punto de entrada
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Páginas
+
+- **/** - Home con secciones resumidas
+- **/about** - Sobre mí (experiencia, educación)
+- **/projects** - Casos de estudio detallados
+- **/skills** - Tecnologías y herramientas
+- **/experience** - Timeline profesional
+- **/contact** - Formulario y contacto
+
+## Commands
+
+```bash
+# Instalar dependencias
+npm install
+
+# Iniciar desarrollo
+npm run dev
+
+# Build para producción
+npm run build
+```
+
+## Autor
+
+Matias Sticca
